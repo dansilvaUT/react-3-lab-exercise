@@ -1,7 +1,7 @@
 import { Component } from 'react';
 class ButtonMenu extends Component {
+
     render() {
-        console.log('props', this.props.index)
         return (
             <section className='btn-section'>
                 <button onClick={this.props.prev} className='link-btn prev-btn'>&lt; Previous</button>

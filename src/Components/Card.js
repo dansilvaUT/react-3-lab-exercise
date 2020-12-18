@@ -10,7 +10,6 @@ class Card extends Component {
             list: data,
             index: 0
         }
-
         this.nextCard = this.nextCard.bind(this);
         this.prevCard = this.prevCard.bind(this);
     }
@@ -21,7 +20,6 @@ class Card extends Component {
         } else {
             this.setState({ index: this.state.index + 1 });
         }
-
     }
 
     prevCard() {
@@ -53,7 +51,8 @@ class Card extends Component {
                 </section>
                 <ButtonMenu
                     next={this.nextCard}
-                    prev={this.prevCard} />
+                    prev={this.prevCard}
+                />
             </section>
         )
     }
