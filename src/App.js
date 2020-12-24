@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import Card from './Components/Card';
-
+import New from './Components/New';
 import data from './data';
 import { Component } from 'react';
 import './App.css';
@@ -27,7 +27,9 @@ class App extends Component {
                 <Header />
                 <Card
                     data={this.state.data}
-                    delete={this.deleteCard} />
+                    delete={this.deleteCard}
+                />
+                <New />
             </div>
         )
     }
